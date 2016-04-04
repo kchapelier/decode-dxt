@@ -1,19 +1,25 @@
 "use strict";
 
-var dxt1 = require('./lib/dxt1'),
-    dxt3 = require('./lib/dxt3'),
-    dxt5 = require('./lib/dxt5');
+var bc1 = require('./lib/bc1'),
+    bc2 = require('./lib/bc2'),
+    bc3 = require('./lib/bc3');
 
-//TODO support DXT2 and DXT4 (3 and 5 with colors premultiplied with alpha)
+//TODO check correctness of readDXT2 and readDXT4
 
 module.exports = {
     readDXT1: function (imageData, width, height) {
-        return dxt1.read(imageData, width, height);
+        return bc1.read(imageData, width, height);
+    },
+    readDXT2: function (imageData, width, height) {
+        return bc2.read(imageData, width, height, true);
     },
     readDXT3: function (imageData, width, height) {
-        return dxt3.read(imageData, width, height);
+        return bc2.read(imageData, width, height, false);
+    },
+    readDXT4: function (imageData, width, height) {
+        return bc3.read(imageData, width, height, true);
     },
     readDXT5: function (imageData, width, height) {
-        return dxt5.read(imageData, width, height);
+        return bc3.read(imageData, width, height, false);
     }
 };
