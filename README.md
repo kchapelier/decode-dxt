@@ -44,17 +44,13 @@ Decode a given DXT image to an Uint8Array containing the RGBA data of the image.
 
 ### Format flags
 
-**decode.dxt1**
-
-**decode.dxt2**
-
-**decode.dxt3**
-
-**decode.dxt4**
-
-**decode.dxt5**
+**decode.dxt1**, **decode.dxt2**, **decode.dxt3**, **decode.dxt4** and **decode.dxt5**
 
 ## Changelog
+
+### [1.0.0](https://github.com/kchapelier/dxt-decode/tree/1.0.0) (2016-08-06) :
+
+ * First publication.
 
 ## License
 

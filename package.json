@@ -1,12 +1,25 @@
 {
-  "name": "dxt",
-  "version": "0.0.0",
-  "private": true,
-  "description": "Codec for the DXT texture formats (work in progress)",
+  "name": "decode-dxt",
+  "version": "1.0.0",
+  "description": "Decoder for the DXT texture formats",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kchapelier/decode-dxt.git"
+  },
+  "keywords": [
+    "dxt",
+    "texture",
+    "block compression"
+  ],
   "author": "Kevin Chapelier",
-  "license": "MIT"
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/kchapelier/decode-dxt/issues"
+  },
+  "homepage": "https://github.com/kchapelier/decode-dxt"
 }
