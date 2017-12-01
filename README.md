@@ -48,6 +48,10 @@ Decode a given DXT image to an Uint8Array containing the RGBA data of the image.
 
 ## Changelog
 
+### [1.0.1](https://github.com/kchapelier/decode-dxt/tree/1.0.1) (2017-12-01) :
+
+ * Fix black artifacts in some edge cases for BC2 and BC3.
+
 ### [1.0.0](https://github.com/kchapelier/decode-dxt/tree/1.0.0) (2016-08-06) :
 
  * First publication.
